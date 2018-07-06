@@ -1,0 +1,395 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Russo One";
+  box-sizing: border-box; }
+
+header {
+  background: url("../img/foto2.jpg");
+  background-position: center 0;
+  background-size: cover;
+  height: 700px; }
+  header .contenedor {
+    margin: auto; }
+    header .contenedor .contenedor-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      header .contenedor .contenedor-header .contenedor-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        margin-top: 35px; }
+        header .contenedor .contenedor-header .contenedor-nav .nombre {
+          margin: auto;
+          background-color: green; }
+          header .contenedor .contenedor-header .contenedor-nav .nombre a {
+            color: #ccc;
+            font-size: 40px;
+            text-decoration: none; }
+        header .contenedor .contenedor-header .contenedor-nav .btn-menu {
+          color: #fafafa;
+          display: block;
+          margin: auto;
+          background-color: red; }
+        header .contenedor .contenedor-header .contenedor-nav .nav {
+          padding: 25px 50px;
+          background-color: blue; }
+          header .contenedor .contenedor-header .contenedor-nav .nav__item {
+            text-decoration: none;
+            color: #ccc;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 25px 15px;
+            font-family: "Russo One"; }
+            header .contenedor .contenedor-header .contenedor-nav .nav__item:hover {
+              background: #ccc;
+              color: #000;
+              font-weight: 600;
+              transition-duration: 1s;
+              transition-timing-function: ease;
+              -webkit-transition-duration: 1s;
+              -webkit-transition-timing-function: ease; }
+    header .contenedor .texto-logo {
+      width: 500px;
+      height: 300px;
+      margin: auto;
+      margin-top: 200px;
+      text-align: center;
+      overflow: hiden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: rgba(17, 17, 17, 0.5);
+      border: 0.5px solid #222;
+      position: relative; }
+      header .contenedor .texto-logo .titulo {
+        font-size: 50px;
+        color: #D4AF37; }
+      header .contenedor .texto-logo .ciudad {
+        font-size: 30px;
+        color: #D4AF37; }
+      header .contenedor .texto-logo::before, header .contenedor .texto-logo::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 8px;
+        background-color: white;
+        transition: transform 500ms;
+        will-change: transform;
+        transform: translateX(100%);
+        transform-delay: 1s; }
+      header .contenedor .texto-logo--loaded::before {
+        top: 0;
+        transform: translateX(0%); }
+      header .contenedor .texto-logo--loaded::after {
+        bottom: 0;
+        transform: translateX(0%); }
+
+.welcome .fondo {
+  background: url(../img/Dot.Bell/welcome2.jpg);
+  background-attachment: fixed;
+  background-position: center 0;
+  padding: 50px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; }
+  .welcome .fondo .fondo2 {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fafafa;
+    font-size: 150px;
+    text-align: center;
+    margin: auto; }
+    .welcome .fondo .fondo2 h4 {
+      font-family: "Dancing Script";
+      margin: auto; }
+
+.works {
+  background: url(../img/fondo-welcome.jpg);
+  background-position: center 0;
+  background-size: cover;
+  padding: 50px 0; }
+  .works .titulo-works {
+    padding: 40px 0;
+    color: #D4AF37; }
+    .works .titulo-works .titulo2 {
+      text-align: center;
+      font-size: 50px; }
+  .works .imagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto; }
+    .works .imagenes .img img {
+      border-radius: 5px;
+      margin: 10px 0px;
+      width: 230px;
+      height: 230px; }
+
+.acerca-de {
+  background: url(../img/Dot.Bell/welcome.jpg);
+  background-position: center 0;
+  background-attachment: fixed;
+  padding: 50px 0; }
+  .acerca-de .texto {
+    text-align: center;
+    margin: auto;
+    padding: 60px 0;
+    color: #fafafa;
+    background: rgba(0, 0, 0, 0.7); }
+    .acerca-de .texto h4 {
+      font-size: 40px;
+      padding: 20px 0; }
+
+.team {
+  background: url(../img/textura6.png);
+  padding: 20px 0; }
+  .team .titulo-team {
+    text-align: center;
+    font-size: 50px;
+    color: #D4AF37; }
+    .team .titulo-team h3 {
+      padding: 50px; }
+  .team .contenedor-team {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    alig-items: center;
+    padding-bottom: 50px; }
+    .team .contenedor-team .artista {
+      width: 100%;
+      text-align: center;
+      background: #fafafa;
+      border: 2px solid #D4AF37; }
+      .team .contenedor-team .artista img {
+        width: 350px; }
+      .team .contenedor-team .artista .info {
+        padding: 20px;
+        margin: auto;
+        text-align: center; }
+        .team .contenedor-team .artista .info .nombre {
+          color: #444;
+          font-size: 30px;
+          font-family: "Galada";
+          font-weight: 200; }
+        .team .contenedor-team .artista .info .profesion {
+          font-family: "Galada";
+          color: #999;
+          margin: auto;
+          border-bottom: 3px solid #D4AF37;
+          margin-top: -10px;
+          padding-bottom: 10px;
+          width: 50%; }
+        .team .contenedor-team .artista .info .social {
+          padding: 20px 0; }
+          .team .contenedor-team .artista .info .social a {
+            padding: 5px 8px;
+            background-color: #444;
+            color: #fafafa;
+            border-radius: 100%;
+            font-size: 16px;
+            margin: auto 5px; }
+
+.loQueHacemos {
+  padding: 50px 0; }
+  .loQueHacemos .titulo3 {
+    margin: 40px auto;
+    width: 60%;
+    text-align: center; }
+    .loQueHacemos .titulo3 h3 {
+      font-size: 50px;
+      margin: 30px 0;
+      color: #1C2833; }
+    .loQueHacemos .titulo3 p {
+      color: #566573;
+      line-height: 30px; }
+  .loQueHacemos .contenedor-tarjeta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 100px; }
+    .loQueHacemos .contenedor-tarjeta .tarjeta {
+      width: 100%;
+      padding: 30px 0; }
+      .loQueHacemos .contenedor-tarjeta .tarjeta .icono .icon {
+        display: block;
+        margin: auto;
+        border: 5px outset #D4AF37; }
+      .loQueHacemos .contenedor-tarjeta .tarjeta .descripcion {
+        text-align: center; }
+        .loQueHacemos .contenedor-tarjeta .tarjeta .descripcion h5 {
+          font-size: 25px;
+          font-family: "Spirax";
+          padding: 25px; }
+        .loQueHacemos .contenedor-tarjeta .tarjeta .descripcion p {
+          font-size: 14px;
+          color: #566573; }
+
+footer .contacto {
+  background: url(../img/foto3.jpg);
+  background-position: center 0;
+  background-size: cover;
+  display: flex;
+  justify-content: center; }
+  footer .contacto .formulario {
+    margin: 50px 100px;
+    width: 100%; }
+    footer .contacto .formulario .txt-contacto {
+      text-align: center;
+      font-size: 50px;
+      color: #E6E6E6; }
+    footer .contacto .formulario form {
+      display: flex;
+      flex-direction: column; }
+      footer .contacto .formulario form .input-1 {
+        display: flex;
+        flex-direction: row; }
+        footer .contacto .formulario form .input-1 #input {
+          width: 100%;
+          padding: 40px;
+          border: 1px solid #000;
+          margin: 20px 2px;
+          background: rgba(0, 0, 0, 0.5);
+          color: #fafafa; }
+    footer .contacto .formulario textarea {
+      background: rgba(0, 0, 0, 0.5);
+      margin-bottom: 40px;
+      height: 200px;
+      border: 1px solid #000;
+      max-width: 1150px;
+      max-height: 300px;
+      min-height: 200px;
+      padding: 40px;
+      font-size: 25px;
+      color: #fafafa; }
+    footer .contacto .formulario input {
+      margin: auto;
+      width: 30%;
+      padding: 30px;
+      background: rgba(59, 89, 152, 0.9);
+      border: 1px solid #000;
+      border-radius: 10px;
+      font-size: 25px; }
+footer .ubicacion-info {
+  background: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%; }
+  footer .ubicacion-info .ubicacion {
+    color: #fafafa;
+    margin: auto;
+    height: 350px;
+    text-align: center; }
+    footer .ubicacion-info .ubicacion h3 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 30px; }
+  footer .ubicacion-info .info {
+    color: #fafafa;
+    margin: auto;
+    height: 350px;
+    text-align: center; }
+    footer .ubicacion-info .info h5 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 25px; }
+    footer .ubicacion-info .info .dias-horarios {
+      display: flex;
+      flex-direction: row; }
+      footer .ubicacion-info .info .dias-horarios .dias {
+        color: #424949; }
+        footer .ubicacion-info .info .dias-horarios .dias p {
+          padding: 10px; }
+      footer .ubicacion-info .info .dias-horarios .horarios {
+        color: #fafafa; }
+        footer .ubicacion-info .info .dias-horarios .horarios p {
+          padding: 10px; }
+  footer .ubicacion-info .social {
+    margin: auto;
+    color: #fafafa;
+    text-align: center;
+    height: 350px; }
+    footer .ubicacion-info .social h5 {
+      font-size: 30px; }
+    footer .ubicacion-info .social p {
+      padding: 15px;
+      color: #D4AF37; }
+    footer .ubicacion-info .social .redes-sociales {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      footer .ubicacion-info .social .redes-sociales .col-1, footer .ubicacion-info .social .redes-sociales .col-2 {
+        display: flex;
+        flex-direction: row; }
+      footer .ubicacion-info .social .redes-sociales i {
+        font-size: 40px;
+        margin: 0 5px;
+        color: #424949; }
+      footer .ubicacion-info .social .redes-sociales .fa-facebook-f:hover {
+        color: #3b5998; }
+      footer .ubicacion-info .social .redes-sociales .fa-youtube:hover {
+        color: #bb0000; }
+      footer .ubicacion-info .social .redes-sociales .fa-instagram:hover {
+        color: #125688; }
+      footer .ubicacion-info .social .redes-sociales .fa-at:hover {
+        color: #aad450; }
+      footer .ubicacion-info .social .redes-sociales .fa-twitter:hover {
+        color: #55acee; }
+      footer .ubicacion-info .social .redes-sociales .fa-google-plus-g:hover {
+        color: #dd4b39; }
+
+@media screen and (max-width: 1100px) {
+  header .contenedor-header .contenedor-nav .btn-menu {
+    display: block; }
+  header .contenedor-header .contenedor-nav .nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0; }
+
+  .main .team .contenedor-team {
+    flex-direction: column;
+    align-items: center; }
+    .main .team .contenedor-team .artista {
+      margin: 20px 0; }
+  .main .loQueHacemos .contenedor-tarjeta {
+    flex-wrap: wrap; }
+    .main .loQueHacemos .contenedor-tarjeta .tarjeta {
+      width: 50%; }
+
+  footer .contacto form .input-1 {
+    flex-wrap: wrap; }
+    footer .contacto form .input-1 input {
+      width: 100%; }
+  footer .ubicacion-info {
+    flex-direction: column; }
+    footer .ubicacion-info .ubicacion {
+      margin-bottom: 20px; }
+    footer .ubicacion-info .info {
+      margin: 20px 0; } }
+@media screen and (max-width: 700px) {
+  .loQueHacemos .contenedor-tarjeta {
+    flex-direction: column; }
+
+  .welcome h4 {
+    font-size: 50%; }
+
+  footer .contacto form .input-1 #input {
+    margin: 3px; }
+  footer .contacto form #submit {
+    padding: 10px;
+    text-align: center; } }
+
+/*# sourceMappingURL=estilos.css.map */
