@@ -1,7 +1,4 @@
 $(document).ready(function() { 
-        //menu desplegable
-
-        
         
         //efecto-menu
         $(".nav a").each(function(index, el) {
@@ -10,15 +7,10 @@ $(document).ready(function() {
         });
        
         //efecto logo
-        var tituloCiudad = $(".titulo, .ciudad")
+        var tituloCiudad = $(".titulo, .ciudad, .texto-logo")
         tituloCiudad.css({opacity: 0,});
         tituloCiudad.animate({opacity: 1}, 4000);
         
-        $(".texto-logo")
-            .addClass("texto-logo--loaded")
-            .css({opacity: 0})
-            .animate({opacity: 1}, 3000);
-
 
         //navegar offset
 

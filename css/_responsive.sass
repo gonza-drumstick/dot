@@ -2,25 +2,29 @@
 	header
 		.contenedor-header
 			.contenedor-nav
-				.btn-menu
-					display: block
-				.nav
-					display: flex
-					flex-direction: column
-					padding: 0 
+				display: flex
+				flex-wrap: wrap
+				.nav, .nombre
+					width: 100%
+					text-align: center
 	.main
 		.team	
 			.contenedor-team
 				flex-direction: column
 				align-items: center
 				.artista
-					margin: 20px 0
+					margin: 20px auto
 					
 		.loQueHacemos
 			.contenedor-tarjeta
 				flex-wrap: wrap	
+				padding: 0
 				.tarjeta
-					width: 50%
+					width: auto
+		.welcome
+			h4
+				font-size: 50%
+
 	footer	
 		.contacto
 			form
@@ -28,6 +32,8 @@
 					flex-wrap: wrap
 					input
 						width: 100%
+				#submit
+					width: auto
 		.ubicacion-info
 			flex-direction: column
 			.ubicacion
@@ -36,18 +42,29 @@
 				margin: 20px 0
 
 @media screen and (max-width: 700px)
+
+header
+	.nav
+		padding: 0 
+		margin: auto
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		& .nav__item
+			padding: 5px 3px
+	.texto-logo
+		margin: auto
 	.loQueHacemos
 		.contenedor-tarjeta
 			flex-direction: column
-	.welcome
-		h4
-			font-size: 50%
+			padding: 0
+			
+	
 	footer	
 		.contacto
 			form
 				.input-1
 					#input
 						margin: 3px
-				#submit
-					padding: 10px
-					text-align: center
+
+					
